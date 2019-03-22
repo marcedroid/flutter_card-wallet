@@ -1,0 +1,40 @@
+{
+  "cardResults":[
+    {
+      "cardHolderName": "DANIEL ORTIZ",
+      "cardNumber": "5432776129823451",
+      "cardMonth": "11",
+      "cardYear": "2021",
+      "cardCvv": "354",
+      "cardColor": null,
+      "cardType": "CREDIT"
+    },
+    {
+      "cardHolderName": "ROMAIN RASTER",
+      "cardNumber": "7623918234092323",
+      "cardMonth": "07",
+      "cardYear": "2022",
+      "cardCvv": "883",
+      "cardColor": null,
+      "cardType": "CREDIT"
+    },
+    {
+      "cardHolderName": "NILAY YENER",
+      "cardNumber": "8723615239283462",
+      "cardMonth": "06",
+      "cardYear": "2023",
+      "cardCvv": "554",
+      "cardColor": null,
+      "cardType": "CREDIT"
+    },
+    {
+      "cardHolderName": "PAWAN KUMAR",
+      "cardNumber": "5423477621342892",
+      "cardMonth": "12",
+      "cardYear": "2019",
+      "cardCvv": "665",
+      "cardColor": null,
+      "cardType": "CREDIT"
+    }
+  ]
+}
