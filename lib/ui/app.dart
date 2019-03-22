@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:card_wallet/ui/widgets/card_list.dart';
+import 'package:card_wallet/ui/card_type.dart';
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        brightness: Brightness.light,
         elevation: 0.0,
         backgroundColor: Colors.white,
         centerTitle: true,
@@ -30,7 +32,11 @@ class App extends StatelessWidget {
               Icons.add,
               color: Colors.black,
             ),
-            onPressed: (){},
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => CardType(),
+              ));
+            },
           )
         ],
       ),
