@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:card_wallet/ui/widgets/card_list.dart';
 
 class App extends StatelessWidget {
   @override
@@ -35,7 +36,7 @@ class App extends StatelessWidget {
       ),
 
       body: Container(
-        child: Text("Hola, mundo"),
+        child: CardList(),
       ),
     );
   }

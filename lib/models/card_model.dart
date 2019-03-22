@@ -6,7 +6,7 @@ class CardModel{
   CardModel({this.results});
 
   CardModel.fromJson(Map<String, dynamic> json) {
-    if(json['cardResults']) {
+    if(json['cardResults'] != null) {
       results = List<CardResults>();
       json['cardResults'].forEach((v) {
         results.add(CardResults.fromJson(v));

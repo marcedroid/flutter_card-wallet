@@ -21,6 +21,8 @@ class CardListBloc {
     for(var i = 0; i < _cardResults.length ; i++) {
       _cardResults[i].cardColor = CardColors.baseColors[i];
     }
+
+    _cardsCollection.sink.add(_cardResults);
   }
 
   CardListBloc(){
