@@ -12,12 +12,10 @@ class CardList extends StatelessWidget {
     return StreamBuilder<List<CardResults>>(
       stream: cardListBloc.cardsList,
       builder: (BuildContext context, AsyncSnapshot snapshot) {
-        return Column(
-          children: <Widget>[
-            !snapshot.hasData ?
+        return Container(
+          child: !snapshot.hasData ?
               _circularProgress() :
               SizedBox(
-                height: _screenSize.height * 0.8,
                 child: Swiper(
                   itemCount: snapshot.data.length,
                   itemWidth: _screenSize.width * 0.7,
@@ -31,7 +29,6 @@ class CardList extends StatelessWidget {
                   },
                 ),
               )
-          ],
         );
       },
     );
