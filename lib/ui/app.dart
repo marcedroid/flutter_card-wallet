@@ -8,6 +8,13 @@ class App extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.white,
         centerTitle: true,
+        leading: IconButton(
+          icon: Icon(
+            Icons.menu,
+            color: Colors.black,
+          ),
+          onPressed: (){}
+        ),
         title: Text(
           "Wallet",
           style: TextStyle(
@@ -16,6 +23,15 @@ class App extends StatelessWidget {
             fontWeight: FontWeight.w600
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.add,
+              color: Colors.black,
+            ),
+            onPressed: (){},
+          )
+        ],
       ),
 
       body: Container(
