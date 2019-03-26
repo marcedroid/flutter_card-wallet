@@ -2,8 +2,10 @@ import 'dart:async';
 import 'package:rxdart/rxdart.dart';
 import 'package:card_wallet/models/card_color_model.dart';
 import 'package:card_wallet/helpers/card_colors.dart';
+import 'validators.dart';
+import 'package:card_wallet/blocs/bloc_provider.dart';
 
-class CardBloc {
+class CardBloc with Validators implements BlocBase{
   BehaviorSubject<String> _cardHolderName = BehaviorSubject<String>();
   BehaviorSubject<String> _cardNumber = BehaviorSubject<String>();
   BehaviorSubject<String> _cardMonth = BehaviorSubject<String>();
