@@ -25,6 +25,11 @@ class CardListBloc {
     _cardsCollection.sink.add(_cardResults);
   }
 
+  void addCardToList(CardResults newCard){
+    _cardResults.add(newCard);
+    _cardsCollection.sink.add(_cardResults);
+  }
+
   CardListBloc(){
     initialData();
   }
