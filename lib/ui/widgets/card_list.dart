@@ -19,7 +19,7 @@ class CardList extends StatelessWidget {
                 child: Swiper(
                   itemCount: snapshot.data.length,
                   itemWidth: _screenSize.width * 0.7,
-                  itemHeight: _screenSize.height * 0.5,
+                  itemHeight: _screenSize.height * 0.6,
                   layout: SwiperLayout.STACK,
                   scrollDirection: Axis.vertical,
                   itemBuilder: (BuildContext context, int index) {
