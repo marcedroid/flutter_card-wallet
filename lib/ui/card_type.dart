@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:card_wallet/ui/widgets/my_appbar.dart';
+import 'package:card_wallet/blocs/bloc_provider.dart';
+import 'package:card_wallet/blocs/card_bloc.dart';
+import 'package:card_wallet/ui/card_create.dart';
 
 class CardType extends StatelessWidget {
   @override
@@ -96,7 +99,12 @@ class CardType extends StatelessWidget {
           ),
         ),
         onPressed: (){
-
+          var blocProviderCardCreate = BlocProvider(
+            child: CardCreate(),
+            bloc: CardBloc()
+          );
+          blocProviderCardCreate.bloc.selectCardType(buttonText);
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>blocProviderCardCreate));
         }
       ),
     );

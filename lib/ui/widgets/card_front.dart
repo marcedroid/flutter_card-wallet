@@ -101,7 +101,8 @@ class CardFront extends StatelessWidget {
               return Text(
                 snapshot.hasData && snapshot.data.length>2?
                     '/${snapshot.data.substring(2)}':
-                    '/00'
+                    '/00',
+                style: TextStyle(color: Colors.white, fontSize: 16.0),
               );
             },
           )
